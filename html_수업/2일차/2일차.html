@@ -1,0 +1,78 @@
+<!-- 느낌표 + tab키 -> HTML 자동 생성 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        table,
+        th,
+        td{
+            margin : 100px auto;
+            border : 1px solid black;
+        }
+        th,td{
+            padding: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- 여기서 작업예정 -->
+    <!-- 오늘시간 Table과 간단한 CSS를 배울예정 -->
+
+    <!-- 테이블 태그 : 사이트에서 시간표, 목록(을)를 작성할 때 사용하는 태그 -->
+    <!-- 실무에서 테이블 태그 사용률 100% -->
+    <!-- tr : table row에 줄임말, 테이블에서 행을 나타냄 -->
+    <!-- th : table header에 줄임말, 테이블에서 열을 나타냄 -->
+    <!-- td : table data 줄임말, 테이블에서 열을 나타냄 -->
+    <h2>시간표</h2>
+    <table>
+        <tr>
+            <th></th>
+            <th>월</th>
+            <th>화</th>
+            <th>수</th>
+            <th>목</th>
+            <th>금</th>
+        </tr>
+        <tr>
+            <td>18:00 ~ 19:00</td>
+            <td rowspan="3">요가</td>
+            <td rowspan="2">다이어트 복싱</td>
+            <td>요가</td>
+            
+            <td rowspan ="4">필라테스</td>
+            <td rowspan ="2">다이어트 복싱</td>
+         
+
+        </tr>
+        <tr>
+            <td>19:00 ~ 20:00</td>
+            <td>필라테스</td>
+            
+
+        </tr>
+        <tr>
+            <td>20:00~21:00</td>
+            <td>요가</td>
+            <td>요가</td>
+            <td rowspan ="2">필라테스</td>
+            
+        </tr>
+        <tr>
+            <td>21:00 ~ 22:00</td>
+            <td>필라테스</td>
+            <td>필라테스</td>
+            <td>필라테스</td>
+        </tr>
+    </table>
+</body>
+</html>

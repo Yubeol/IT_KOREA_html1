@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      * {
+        .container {
+          /*margin-top: 20px;
+                margin-left: 20px;
+                margin-left: 20px;
+                margin-right: 20px;
+                */
+          margin: 20px auto;
+          width: 500px;
+          height: 800px;
+          background-color: yellowgreen;
+          /* padding 20px은 상,하,좌,우로 20px씩을 주겠다 ->의미*/
+          padding: 20px;
+        }
+        .content01 {
+          width: 450px;
+          height: 250px;
+          background-color: darkgreen;
+          border: 1px solid black;
+          margin-bottom: 20px;
+        }
+        .content02 {
+          width: 450px;
+          height: 250px;
+          background-color: darkgreen;
+          border: 1px solid black;
+          margin-top: 20px;
+        }
+      }
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+    </style>
+  </head>
+  <body>
+    <!--padding margin복습-->
+    <!--margin은 좌우 간격 auto로 맞출 수 있음. padding은 불가능
+        auto를 하게 되면 화면 중앙으로 배치가능-->
+    <!--
+        margin : 1px; // 상하좌우 마진을 1px 설정
+        margin : 1px 2px; // 상하 마진 1px,좌우 마진을 2px 설정
+        margin : 1px 2px 3px; // 위 마진을 1px, 아래 마진을 2px 좌우 마진을 3px 설정
+        margin : 1px 2px 3px  4px; // 위 마진 1px, 아래 2px, 좌 3px, 우 4px 설정
+
+        padding : 1px; // 상하좌우 패딩을 1px 설정
+        
+         // 상하 패딩 1px,좌우 패딩을 2px 설정  
+        padding : 1px 2px 3px; // 위 마진을 1px, 아래 마진을 2px 좌우 마진을 3px 설정
+        padding : 1px 2px 3px  4px; // 위 마진 1px, 아래 2px, 좌 3px, 우 4px 설정
+
+    -->
+    <div class="container">
+      <div class="content01"></div>
+      <div class="content02"></div>
+    </div>
+  </body>
+</html>
