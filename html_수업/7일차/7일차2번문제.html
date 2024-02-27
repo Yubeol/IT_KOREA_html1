@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .container {
+        height: 10vh;
+        background-color: yellowgreen;
+        display: flex;
+        justify-content: space-between;
+      }
+      .item {
+        border: 1px solid black;
+        /* flex grow : 0 , flex-shrink: 0 , flex-border*/
+        flex: 0 0 20vw;
+      }
+      .item:nth-child(1) {
+        background-color: #d7e8d4;
+      }
+      .item:nth-child(2) {
+        background-color: beige;
+        display: flex;
+      }
+      .item:nth-child(3) {
+        background-color: white;
+      }
+      .inner-item {
+        border: 1px solid black;
+        flex: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 1.flex가 부모와 자식관계
+
+        2~5: 컨테이너에 주는 속성
+        2. 아이템(전체) 가로 배치는 row. 세로배치는 column
+        3. justify(가로축). align(세로축)
+        4. space-between, space around, center 가로축 기준 아이템 정렬
+        5.align-item : center, 세로축 기준 아이템 가운데 정렬
+        6. flex basis, grow, shrink,아이템에 주는 속성-->
+    <div class="container">
+      <div class="item"></div>
+      <div class="item">
+        <div class="inner-item"></div>
+        <div class="inner-item"></div>
+        <div class="inner-item"></div>
+      </div>
+      <div class="item"></div>
+    </div>
+  </body>
+</html>
